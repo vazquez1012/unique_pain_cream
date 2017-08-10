@@ -1,0 +1,187 @@
+<!DOCTYPE HTML>
+<html xmlns="http://sotd.us/cristinavazquez/cristina/index.html">
+<head>
+<meta charset="UTF-8">
+<title>jQuery Mobile Web App</title>
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<link href="styles/custom.css" rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script src="http://ajax.aspnetcdn.com/ajax/mobileservices/MobileServices.Web-1.2.5.min.js"></script>
+
+<style>
+
+.flex-containter {
+	display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.flex-container > * {
+    padding: 15px;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+}
+
+.article {
+    text-align: left;
+}
+
+header {background: black;color:white;}
+footer {background: #aaa;color:white;}
+.nav {background:#eee;}
+
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+.nav ul a {
+    text-decoration: none;
+}
+
+@media all and (min-width: 768px) {
+    .nav {text-align:left;-webkit-flex: 1 auto;flex:1 auto;-webkit-order:1;order:1;}
+    .article {-webkit-flex:5 0px;flex:5 0px;-webkit-order:2;order:2;}
+    footer {-webkit-order:3;order:3;}
+}
+</style>
+</head>
+<body>
+
+<div class="flex-container">
+
+
+<header>
+<h1>Unique Pain Cream| Instant Relief for all ages</h1>
+</header>
+
+
+
+		<article class="article">
+        	<h1>Contact us </h3>
+            <h2>Contact Us</h2>
+<form action="http://www.SnapHost.com/captcha/send.aspx" id="ContactUsCaptchaWebForm" method="post" onsubmit="return ValidateForm(this);" target="_top">
+<input name="skip_WhereToSend" type="hidden" value="your@email.com" />
+<input name="skip_SnapHostID" type="hidden" value="AWDMPEA23AFW" />
+<input name="skip_WhereToReturn" type="hidden" value="http://www.YourWebsiteAddress.com/ThankYouPage.htm" />
+<input name="skip_Subject" type="hidden" value="Contact Us Form" />
+<input name="skip_ShowUsersIp" type="hidden" value="1" />
+<input name="skip_SendCopyToUser" type="hidden" value="1" />
+<script type="text/javascript">
+function ValidateForm(frm) {
+if (frm.Name.value == "") {alert('Name is required.');frm.Name.focus();return false;}
+if (frm.FromEmailAddress.value == "") {alert('Email address is required.');frm.FromEmailAddress.focus();return false;}
+if (frm.FromEmailAddress.value.indexOf("@") < 1 || frm.FromEmailAddress.value.indexOf(".") < 1) {alert('Please enter a valid email address.');frm.FromEmailAddress.focus();return false;}
+if (frm.Comments.value == "") {alert('Please enter comments or questions.');frm.Comments.focus();return false;}
+if (frm.skip_CaptchaCode.value == "") {alert('Enter web form code.');frm.skip_CaptchaCode.focus();return false;}
+return true; }
+function ReloadCaptchaImage(captchaImageId) {
+var obj = document.getElementById(captchaImageId);
+var src = '' + obj.src;
+obj.src = '';
+var date = new Date();
+var pos = src.indexOf('&rad=');
+if (pos >= 0) { src = src.substr(0, pos); }
+obj.src = src + '&rad=' + date.getTime();
+return false; }
+</script>
+<table border="0" cellpadding="5" cellspacing="0" width="600">
+<tr>
+<td><b>Name*:</b></td>
+<td><input name="Name" type="text" maxlength="60" style="width:350px;" /></td>
+</tr><tr>
+<td><b>Phone number:</b></td>
+<td><input name="PhoneNumber" type="text" maxlength="43" style="width:350px;" /></td>
+</tr><tr>
+<td><b>Email address*:</b></td>
+<td><input name="FromEmailAddress" type="text" maxlength="60" style="width:350px;" /></td>
+</tr><tr>
+<td><b>Comments and questions*:</b></td>
+<td><textarea name="Comments" rows="7" cols="40" style="width:350px;"></textarea></td>
+</tr><tr>
+<td colspan="2" align="center"> <br />
+<table border="0" cellpadding="0" cellspacing="0">
+<tr><td colspan="2" style="padding-bottom:18px;">
+<!-- Please check our ProCaptcha service which is ad-free:
+http://www.SnapHost.com/captcha/ProCaptchaOverview.aspx -->
+<a href="http://www.snaphost.com/captcha/ReadyForms/SignUpForm.aspx" alt="registration form example" title="registration form example">
+registration form example</a></td></tr>
+<tr valign="top"><td> <i>Enter web form code*:</i>
+<input name="skip_CaptchaCode" type="text" style="width:80px;" maxlength="6" />
+</td><td>
+<a href="http://www.snaphost.com/captcha/ReadyForms/ContactUsForm.aspx"><img id="CaptchaImage" alt="Contact Us form" title="HTML code for Contact Us form"
+style="margin-left:20px;"
+src="http://www.SnapHost.com/captcha/CaptchaImage.aspx?id=AWDMPEA23AFW&ImgType=2" /></a><br />
+<a href="#" onclick="return ReloadCaptchaImage('CaptchaImage');"><span style="font-size:12px;">reload image</span></a> </td></tr>
+</table> <br />
+* - required fields. &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+<input name="skip_Submit" type="submit" value="Submit" />
+</td></tr>
+</table><br />
+</form>
+
+			<img src="img/topical.jpg" alt="topical" style="width:304px;height:228px;">
+<hr>
+        	<h3>ADDITIONAL SECTION</h3>
+            <p>Fill the form below: </p>
+
+
+        </div>
+
+</body>
+<body>
+  <article class="article">
+		<-- Athletes Apply dime size amount to affected area 3 times per day for 2 weeks. Apply before exercise for increased absorption. When used before therapy or exercise, Nopiate promotes a more comfortable movement and a wider range of motion. When applied afterward it soothes sore muscles and joints to minimize next-day aches and pains. -->
+
+		<footer class="footer-distributed">
+
+			<div class="footer-left">
+
+				<h3>"C:\Users\crist\Desktop\umar.jpg"</h3>
+
+							<p class="footer-company-name">Unique Pain Cream &copy; 2017</p>
+			</div>
+
+			<div class="footer-center">
+
+				<div>
+					<i class="fa fa-map-marker"></i>
+					<p><span>123 Main Street</span> Tampa, Florida 34638</p>
+				</div>
+
+				<div>
+					<i class="fa fa-phone"></i>
+					<p>+1.813.867.5309</p>
+				</div>
+
+				<div>
+					<i class="fa fa-envelope"></i>
+					<p><a href="mailto:xxxxxxxxxxxxxxx@xxxxxxxxxxxxxxxx.xx">xxxxxxxxxxxxxxx@xxxxxxxxxxxxxxxx.xx</a></p>
+				</div>
+
+			</div>
+
+			<div class="footer-right">
+
+				<p class="footer-company-about">
+					<span>About the company</span>
+					Your doctor may recommend a prescription topical pain reliever. Diclofenac gel, Pennsaid, and patches are all NSAIDs—nonsteroidal anti-inflammatory drugs, such as ibuprofen or naproxen. But NOTHING is as good as Unique Topical Pain Cream.
+				</p>
+
+				<div class="footer-icons">
+
+					<a href="#"><i class="fa fa-facebook"></i></a>
+					<a href="#"><i class="fa fa-twitter"></i></a>
+					<a href="#"><i class="fa fa-linkedin"></i></a>
+					<a href="#"><i class="fa fa-paypal"></i></a>
+
+				</div>
+
+			</div>
+		</footer>
+	</body>
+</html>
